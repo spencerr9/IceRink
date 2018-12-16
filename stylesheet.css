@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+body {
+    font-family: "Open Sans";
+}
+
+.fadeAnim {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+h1 {
+    z-index: 10000;
+}
+
+.slides {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* .slide {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+} */
+
+.slide_1 {
+    background: url(./images/landing.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide_2 {
+    background: url(./images/ChristmasSkates.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide_3 {
+    background: url(./images/iceShoes.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide_4 {
+    background: url(./images/hangingSkates.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.centered {
+    /* background-color: blue; */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Staatliches";
+    color: white;
+    font-size: 8rem;
+    line-height: 0.8;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.optionsContainer {
+    width: 100vw;
+    height: 36vh;
+    background-color: rgb(65, 100, 160);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.optionsContainer > div > h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.pricing, .options {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pricingOps, .options > a {
+    margin: 0 30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    width: 100vw;
+    height: 25vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    color: white;
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* PORTRAIT MOBILE SCREENS */
+@media only screen and (max-width: 414px) {
+    .centered {
+        font-size: 4.5rem;
+    }
+
+    .optionsContainer {
+        height: 52vh;
+    }
+
+    .pricing, .options {
+        flex-direction: column;
+    }
+
+    .options > a {
+        margin: 5px 0;
+    }
+}
+
+/* LANDSCAPE MOBILE SCREENS */
+@media (max-width: 823px) and (min-width: 415px) {
+
+}
+
+/* DESKTOP SCREENS */
+
+@media only screen and (min-width: 824px) {
+    .optionsContainer {
+        height: 18vh;
+    }
+
+    footer {
+        height: 12vh;
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
