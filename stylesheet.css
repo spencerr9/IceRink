@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
 
 body {
-    font-family: "Open Sans";
+    font-family: "Montserrat";
 }
 
 .fadeAnim {
@@ -18,12 +19,6 @@ h1 {
     height: 100vh;
     width: 100vw;
 }
-
-/* .slide {
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-} */
 
 .slide_1 {
     background: url(./images/landing.jpg) no-repeat center center;
@@ -64,6 +59,12 @@ h1 {
     color: white;
     font-size: 8rem;
     line-height: 0.8;
+}
+
+.centered > h1 {
+    font-family: "Pinyon Script";
+    font-size: 10rem;
+    line-height: 0.5;
 }
 
 .top-right {
@@ -124,7 +125,7 @@ footer {
 
 /* PORTRAIT MOBILE SCREENS */
 @media only screen and (max-width: 414px) {
-    .centered {
+    .centered, .centered > h1 {
         font-size: 4.5rem;
     }
 
@@ -166,3 +167,20 @@ footer {
         opacity: 1;
     }
 }
+
+
+/* CONTACT PAGE */
+
+.contactLanding {
+    width: 100vw;
+    height: 88vh;
+    background-color: lightgray;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* CONTACT PAGE */
