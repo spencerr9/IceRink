@@ -178,9 +178,14 @@ footer {
 }
 
 .top-left {
-    position: absolute;
+    /* position: absolute; */
     top: 8px;
     left: 16px;
+}
+
+.form-row {
+    width: 100vw;
+    justify-content: center;
 }
 
 /* CONTACT PAGE */
