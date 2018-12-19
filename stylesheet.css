@@ -169,23 +169,65 @@ footer {
 }
 
 
+
+
+
+
+
 /* CONTACT PAGE */
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
 
 .contactLanding {
     width: 100vw;
     height: 88vh;
     background-color: lightgray;
-}
-
-.top-left {
-    /* position: absolute; */
-    top: 8px;
-    left: 16px;
-}
-
-.form-row {
-    width: 100vw;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
+
+.contactForm {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    /* box-sizing: border-box; */
+    /* margin: 0 20px; */
+}
+
+/* PORTRAIT MOBILE SCREENS */
+@media only screen and (max-width: 414px) {
+
+}
+
+/* LANDSCAPE MOBILE SCREENS */
+@media (max-width: 823px) and (min-width: 415px) {
+
+}
+
+/* DESKTOP SCREENS */
+
+@media only screen and (min-width: 824px) {
+
+}
+
+/* @keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
 
 /* CONTACT PAGE */
