@@ -175,6 +175,8 @@ footer {
 
 
 /* CONTACT PAGE */
+/* CONTACT PAGE */
+/* CONTACT PAGE */
 
 .top-left {
     position: absolute;
@@ -193,8 +195,11 @@ footer {
 
 .contactForm {
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
+}
+
+.contactP {
+    width: 90%;
+    word-wrap: break-word;
 }
 
 input {
@@ -202,8 +207,6 @@ input {
     padding: 12px 20px;
     margin: 8px 20px;
     border: none;
-    /* box-sizing: border-box; */
-    /* margin: 0 20px; */
 }
 
 textarea {
@@ -213,6 +216,53 @@ textarea {
     resize: none;
     border: none;
 }
+
+
+
+
+/* RESERVATIONS PAGE */
+/* RESERVATIONS PAGE */
+/* RESERVATIONS PAGE */
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.reservationLanding {
+    width: 100vw;
+    height: 88vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservationForm {
+    display: flex;
+}
+
+.reservationP {
+    width: 90%;
+    word-wrap: break-word;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    border: none;
+}
+
+textarea {
+    width: 92.5%;
+    margin: 8px 20px;
+    padding: 12px 20px;
+    resize: none;
+    border: none;
+}
+
 
 /* PORTRAIT MOBILE SCREENS */
 @media only screen and (max-width: 414px) {
@@ -227,24 +277,35 @@ textarea {
     }
 
     form {
-        padding: 0 16px;
+        padding: 65px 16px;
         display: flex;
         flex-direction: column;
     }
 
     .contactLanding {
-        height: 100vh;
+        height: 616px;
+        align-items: flex-start;
+    }
+
+    .reservationLanding {
+        height: 845px;
+        align-items: flex-start;
+    }
+
+    .reservationForm {
+        flex-direction: column;
+        /* width: 90%; */
     }
 
     .contactForm {
         flex-direction: column;
         /* width: 90%; */
     }
+
 }
 
 /* LANDSCAPE MOBILE SCREENS */
 @media (max-width: 823px) and (min-width: 415px) {
-
 }
 
 /* DESKTOP SCREENS */
