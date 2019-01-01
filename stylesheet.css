@@ -287,25 +287,31 @@ textarea {
         align-items: flex-start;
     }
 
+    .contactForm {
+        flex-direction: column;
+    }
+
     .reservationLanding {
-        height: 845px;
+        height: 782px;
         align-items: flex-start;
     }
 
     .reservationForm {
         flex-direction: column;
-        /* width: 90%; */
-    }
-
-    .contactForm {
-        flex-direction: column;
-        /* width: 90%; */
     }
 
 }
 
 /* LANDSCAPE MOBILE SCREENS */
 @media (max-width: 823px) and (min-width: 415px) {
+    .contactLanding {
+        width: 100vw;
+        height: 552px;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* DESKTOP SCREENS */
