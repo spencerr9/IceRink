@@ -16,23 +16,31 @@
 </head>
 <body>
     <div class="reservationLanding">
-        <a class="btn btn-outline-dark top-left" href="./bonnevilleIceRink.html" role="button">Home</a>
+        <a class="btn btn-outline-dark top-left" href="./iceRink.html" role="button">Home</a>
         <form>
             <h1>Reservations</h1>
             <p class="reservationP">Do you have a party of more than 10? Give us a call or contact us below:</p>
             <div class="reservationForm">
-                <input type="text" name="name" placeholder="Name" maxlength="50" required>
-                <input type="text" name="email" placeholder="Email" maxlength="50" required>
+                <input type="text" name="firstName" placeholder="First Name*" maxlength="50" required>
+                <input type="text" name="lastName" placeholder="Last Name*" maxlength="50" required>
             </div>
             <div class="reservationForm">
-                <input type="date" required>
-                <input type="text" placeholder="How many guests?" maxlength="10" required>
+                <input type="text" name="email" placeholder="Email*" maxlength="50" required>
+                <input type="text" name="phone" placeholder="Phone Number*" maxlength="50" required>
+            </div>
+            <div class="reservationForm">
+                <input type="date" style="min-height: 3.0rem" id="example-date-input" placeholder="Date" required>
+                <input type="text" placeholder="How many guests?*" maxlength="10" required>
             </div>
             <div>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Additional details..." required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Additional details...*" required></textarea>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary bottom-right">Send</button>
+                <button 
+                    type="submit" 
+                    class="btn btn-primary bottom-right"
+                    onclick="thanksAlert()" 
+                >Send</button>
             </div>
         </form>
     </div>
@@ -48,7 +56,12 @@
         </div>
     </footer>
 
-
+    <script>
+        function thanksAlert(){
+            alert("Thanks. Your message has been sent. We will reply within the next 24 hours");
+        }
+    </script>
+    
 
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

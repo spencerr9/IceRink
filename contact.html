@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="contactLanding">
-        <a class="btn btn-outline-dark top-left" href="./bonnevilleIceRink.html" role="button">Home</a>
+        <a class="btn btn-outline-dark top-left" href="./iceRink.html" role="button">Home</a>
         <form>
             <h1>Contact Us</h1>
             <div class="contactForm">
@@ -27,7 +27,11 @@
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Type message here..." required></textarea>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary bottom-right">Send</button>
+                <button 
+                    type="submit" 
+                    class="btn btn-primary bottom-right" 
+                    onclick="thanksAlert()" 
+                >Send</button>
             </div>
         </form>
     </div>
@@ -44,7 +48,11 @@
     </footer>
 
 
-
+    <script>
+        function thanksAlert(){
+            alert("Thanks. Your message has been sent. We will reply within the next 24 hours");
+        }
+    </script>
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
