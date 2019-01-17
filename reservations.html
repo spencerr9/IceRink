@@ -17,27 +17,28 @@
 <body>
     <div class="reservationLanding">
         <a class="btn btn-outline-dark top-left" href="./iceRink.html" role="button">Home</a>
-        <form>
+        <form action="https://formspree.io/lakesiderink@gmail.com" method="POST" >
             <h1>Reservations</h1>
             <p class="reservationP">Do you have a party of more than 10? Give us a call or contact us below:</p>
             <div class="reservationForm">
-                <input type="text" name="firstName" placeholder="First Name*" maxlength="50" required>
-                <input type="text" name="lastName" placeholder="Last Name*" maxlength="50" required>
+                <input type="text" name="Name" placeholder="Full Name" maxlength="50" required>
+                <!-- <input type="text" name="lastName" placeholder="Last Name*" maxlength="50" required> -->
             </div>
             <div class="reservationForm">
-                <input type="text" name="email" placeholder="Email*" maxlength="50" required>
-                <input type="text" name="phone" placeholder="Phone Number*" maxlength="50" required>
+                <input type="text" name="email" placeholder="Email" maxlength="50" required>
+                <input type="text" name="phone" placeholder="Phone Number" maxlength="50" required>
             </div>
             <div class="reservationForm">
-                <input type="date" style="min-height: 3.0rem" id="example-date-input" placeholder="Date" required>
-                <input type="text" placeholder="How many guests?*" maxlength="10" required>
+                <input type="date" name="date" style="min-height: 3.0rem" id="example-date-input" placeholder="Date" required>
+                <input type="text" name="# guests" placeholder="How many guests?" maxlength="10" required>
             </div>
             <div>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Additional details...*" required></textarea>
+                <textarea name="message" name="message" id="" cols="30" rows="10" placeholder="Additional details..." required></textarea>
             </div>
             <div>
                 <button 
                     type="submit" 
+                    value="send"
                     class="btn btn-primary bottom-right"
                     onclick="thanksAlert()" 
                 >Send</button>
@@ -46,8 +47,8 @@
     </div>
     <footer>
         <div>
-            <a href="tel: 773-966-8473" class="fa fa-phone"></a>
-            <a href="mailto: spencer.ricks9@gmail.com" class="fa fa-envelope"></a>
+            <a href="tel: 208-757-3999" class="fa fa-phone"></a>
+            <a href="mailto: lakesiderink@gmail.com" class="fa fa-envelope"></a>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
         </div>
@@ -56,11 +57,11 @@
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         function thanksAlert(){
             alert("Thanks. Your message has been sent. We will reply within the next 24 hours");
         }
-    </script>
+    </script> -->
     
 
     <!-- BOOTSTRAP -->

@@ -17,18 +17,19 @@
 <body>
     <div class="contactLanding">
         <a class="btn btn-outline-dark top-left" href="./iceRink.html" role="button">Home</a>
-        <form>
+        <form action="https://formspree.io/lakesiderink@gmail.com" method="POST" >
             <h1>Contact Us</h1>
             <div class="contactForm">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="email" placeholder="Email" required>
             </div>
             <div>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Type message here..." required></textarea>
+                <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Type message here..." required></textarea>
             </div>
             <div>
                 <button 
                     type="submit" 
+                    value="send"
                     class="btn btn-primary bottom-right" 
                     onclick="thanksAlert()" 
                 >Send</button>
@@ -37,8 +38,8 @@
     </div>
     <footer>
         <div>
-            <a href="tel: 773-966-8473" class="fa fa-phone"></a>
-            <a href="mailto: spencer.ricks9@gmail.com" class="fa fa-envelope"></a>
+            <a href="tel: 208-757-3999" class="fa fa-phone"></a>
+            <a href="mailto: lakesiderink@gmail.com" class="fa fa-envelope"></a>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
         </div>
@@ -49,9 +50,9 @@
 
 
     <script>
-        function thanksAlert(){
-            alert("Thanks. Your message has been sent. We will reply within the next 24 hours");
-        }
+        // function thanksAlert(){
+        //     alert("Thanks. Your message has been sent. We will reply within the next 24 hours");
+        // }
     </script>
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
