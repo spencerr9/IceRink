@@ -90,6 +90,10 @@ h1 {
     padding: 35px 0;
 }
 
+.weatherMap {
+    width: 100vw;
+}
+
 .optionsContainer > div > h1 {
     font-family: "Montserrat";
     font-weight: 700;
